@@ -1,0 +1,187 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General rules */
+body {
+    margin: 0 3%;
+    background-color: rgb(248, 245, 241);
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(49, 111, 98);
+}
+
+/* Header */
+header img {
+    padding: 2rem 0 1rem 0;
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    margin: 2rem auto;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav a {
+    padding: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(199, 122, 76);
+    text-decoration: solid transparent underline 3px;
+    text-underline-offset: 0.5rem;
+    transition: 0.3s linear;
+}
+
+nav a:hover { /* Hover effect for the navigation bar */
+    text-decoration-color: rgb(49, 111, 98);
+}
+
+/* Promotion banner */
+.promotion { 
+    background-image: url("images/banner1.jpg");
+    height: 350px;
+    background-size: cover;
+    background-position: top;
+    border-radius: 1rem;
+}
+
+.promotion article {
+    height: inherit;
+    width: 65%;
+    display: flex; /* Using Flexbox to align the text and button inside the banner */
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.promotion div { /* The text and the button are wrapped in divs to allow for better alignment using Flexbox */
+    padding: 0 1rem;
+}
+
+.promotion p {
+    padding-bottom: 1.5rem;
+    color: rgb(248, 245, 241);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+span {
+    background-color: rgba(49, 111, 97, 0.703); /* Light background for the banner text to make it stand out */
+}
+
+.promotion button { /* class included in the selector in case other buttons will be added later */
+    min-width: 100px;
+    width: 20vw;
+    margin-bottom: 3rem;
+    height: 2rem;
+    font: inherit;
+    background-color: rgb(199, 122, 76);
+    color: rgb(248, 245, 241);
+    border: solid rgb(248, 245, 241);
+    transition: 0.2s;
+}
+
+.promotion button:hover { /* Hover effect for the button */
+    background-color: rgb(225, 144, 97);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* Three columns */
+.content {
+    display: flex; /* Using Flexbox to align the three columns */
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.content article {
+    flex: 1;
+    background-color: rgba(119, 153, 119, 0.308);
+    border-radius: 1rem;
+    max-width: 600px;
+}
+
+h2 {
+    font-weight: bolder;
+    padding: 2rem;
+    text-align: center;
+}
+
+.content img,
+.content p {
+    margin: 0 auto 2rem auto;
+    display: block;
+    padding: 0 3vw;
+    max-width: 360px;
+    text-align: justify;
+}
+
+.content a {
+    font-weight: bold;
+    color: rgb(199, 122, 76);
+    text-decoration: solid transparent underline 2px;
+    text-underline-offset: 0.5rem;
+    transition: 0.3s linear;
+}
+
+a:hover { /* Hover effect for the links */
+    text-decoration-color: rgb(199, 122, 76);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+
+footer div {
+    text-align: center;
+    flex: 1;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+footer> :nth-child(1) { /* To add the right border only to the first div */
+    border-right: solid rgb(199, 122, 76) 2px;
+}
+
+footer img {
+    width: 40px;
+    transition: 0.5s;
+}
+
+footer img:hover { /* Hover effect for the small logo */
+    transform: rotate(20deg);
+}
+
+
+/* Adjustments for smaller screens */
+
+@media screen and (max-width: 950px) {
+    .promotion article { /* The banner text and button will be centered on smaller screens */
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav a { /* Smaller distance between the navigation bar items on smaller screens */
+        padding: 1rem;
+    }
+}
