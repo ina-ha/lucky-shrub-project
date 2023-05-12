@@ -1,7 +1,8 @@
-# coursera-project
-Coursera portfolio project for Meta Front-End Developer course (HTML and CSS in depth)
+**Coursera portfolio project for Meta Front-End Developer course (HTML and CSS in depth)**
 
-Task: create a home page for a fictional client.
+View live page: https://ina-ha.github.io/coursera-project/
+
+**Task: create a home page for a fictional client.**
 
 Based in Tuscon, Arizona, Lucky Shrub is a medium-sized garden design firm that specializes in garden design and creation, maintenance and landscaping.
 The company also runs a small plant nursery that sells indoor and outdoor plants,
@@ -10,7 +11,7 @@ Lucky Shrub was started by a husband and wife team, Jason and Maria, who share a
 Jason is the garden architect. He creates and oversees all designs while managing his team of landscapers.
 Maria manages all the marketing for the company and oversees the nursery.
 
-Specifications check list:
+**Specifications check list:**
 
 **Visual layout**
 
