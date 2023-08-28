@@ -1,6 +1,6 @@
 **Coursera portfolio project for Meta Front-End Developer course (HTML and CSS in depth)**
 
-View live page: https://ina-ha.github.io/coursera-project/
+View live page: https://ina-ha.github.io/lucky-shrub-project/
 
 **Task: create a home page for a fictional client.**
 
